@@ -202,8 +202,8 @@ J2 210 60
         function projectPoint(trend, plunge) {
             const r = radius * Math.tan(rad(90 - plunge) / 2);
             const theta = rad(trend - 90);
-            const x = centerX + r * Math.cos(theta);
-            const y = centerY + r * Math.sin(theta);
+            const x = centerX - r * Math.cos(theta);
+            const y = centerY - r * Math.sin(theta);
             return { x, y };
         }
 
